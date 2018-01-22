@@ -2603,3 +2603,9 @@
 		margin: 0;
 		border-bottom: 1px solid lightgrey;
 	}
+
+	@media screen and (max-width: 736px){
+		.alt{
+			width: 95%;
+		}
+	}
