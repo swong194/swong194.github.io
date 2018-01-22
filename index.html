@@ -1,115 +1,203 @@
 <!DOCTYPE HTML>
 <!--
-	Astral by HTML5 UP
+	Prologue by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Sunny G. Wong</title>
+		<title>Sunny Wong</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<meta charset="UTF-8">
 		<meta name="google" content="notranslate">
 		<meta http-equiv="Content-Language" content="en">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="./images/favico2.ico" type="image/x-icon">
+		<link rel="icon" href="./images/favico2.ico" type="image/x-icon">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/devicon-master/devicon.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+		<!-- Header -->
+			<div id="header">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#portfolio" class="icon fa-folder"><span>My Portfolio</span></a>
-						<a href="#story" class="icon fa-user"><span>My Story</span></a>
-						<a href="#skills" class="icon fa-code"><span>My Skills</span></a>
-					</nav>
+				<div class="top">
 
-				<!-- Main -->
-					<div id="main">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">Sunny Wong</h1>
+							<p>Software Engineer</p>
+						</div>
 
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>Sunny G. Wong</h1>
-									<p>Software Engineer</p>
-									<img src="#" alt="headshot">
-								</header>
-								<a href="#portfolio" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-						<!-- Work -->
-							<article id="portfolio" class="panel">
-								<header>
-									<h2>Projects</h2>
-								</header>
-								<section>
-									<div class="row">
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+								Prologue's nav expects links in one of two formats:
 
-						<!-- Contact -->
-							<article id="story" class="panel">
-								<header>
-									<h2>Hi! My name is Sunny</h2>
-									<p>In my undergraduate studies I studied biomedical engineering, where I used engineering practices and creative thinking to solve </p>
-								</header>
-							</article>
+								1. Hash link (scrolls to a different section within the page)
 
-							<article id='skills' class="panel">
-								<div class="row">
-									<i class="devicon-atom-original colored"></i>
-									<i class="devicon-bootstrap-plain colored"></i>
-									<i class="devicon-css3-plain colored"></i>
-									<i class="devicon-heroku-plain colored"></i>
-									<i class="devicon-git-plain colored"></i>
-									<i class="devicon-github-plain colored"></i>
-									<i class="devicon-javascript-plain colored"></i>
-									<i class="devicon-html5-plain colored"></i>
-									<i class="devicon-jquery-plain colored"></i>
-									<i class="devicon-postgresql-plain colored"></i>
-									<i class="devicon-rails-plain colored"></i>
-									<i class="devicon-react-original colored"></i>
-									<i class="devicon-ruby-plain colored"></i>
-									<i class="devicon-sass-original colored"></i>
-									<i class="devicon-webpack-plain colored"></i>
-								</div>
-							</article>
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-					</div>
+								2. Standard link (sends the user to another page/site)
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Welcome</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">My Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">My Story</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://github.com/swong194" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sunny-gy-wong/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-					</div>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! my name is Sunny and I'm a software engineer from NYC!</h2>
+								<h3 class='alt'>Experienced in React, Redux, JavaScript, Ruby on Rails and PostgreSQL</h3>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="fa fa-angle-down scrolly"></a>
+							</footer>
+
+						</div>
+					</section>
+
+					<section id='skills'>
+						<h2>My Skills</h2>
+						<div class="container">
+							<div class="item skill">
+								<i class="devicon-atom-original colored"></i>
+								<i class="devicon-bootstrap-plain colored"></i>
+								<i class="devicon-css3-plain colored"></i>
+								<i class="devicon-heroku-plain colored"></i>
+								<i class="devicon-git-plain colored"></i>
+								<i class="devicon-github-plain colored"></i>
+								<i class="devicon-javascript-plain colored"></i>
+								<i class="devicon-html5-plain colored"></i>
+							</div>
+							<div class="item skill">
+								<i class="devicon-jquery-plain colored"></i>
+								<i class="devicon-postgresql-plain colored"></i>
+								<i class="devicon-rails-plain colored"></i>
+								<i class="devicon-react-original colored"></i>
+								<i class="devicon-ruby-plain colored"></i>
+								<i class="devicon-sass-original colored"></i>
+								<i class="devicon-webpack-plain colored"></i>
+							</div>
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>My Portfolio</h2>
+							</header>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<img class='image fit' src="images/markdom.gif" alt="" />
+
+									<p class='detail'>MarkDOM is a JavaScript library that simplfies client side scripting of HTML</p>
+										<header>
+											<h2>MarkDOM</h2>
+											<a target='_blank' href="http://sunnygwong.com/markDOM/">Live</a>
+											<span>|</span>
+											<a target='_blank' href="https://github.com/swong194/markDOM">Code</a>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/dissonance.gif" alt="" /></a>
+										<p class='detail'>Dissonance is a SPA messaging app built using React, Redux and Ruby on Rails</p>
+										<header>
+											<h2>Dissonance</h2>
+											<a target='_blank' href="http://dissonance.herokuapp.com/">Live</a>
+											<span>|</span>
+											<a target='_blank' href="https://github.com/swong194/dissonance">Code</a>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/happysquare.gif" alt="" /></a>
+										<p class='detail'>Happy Square is a interactive board built with HTML5 canvas</p>
+										<header>
+											<h2>Happy Square</h2>
+											<a target='_blank' href="http://sunnygwong.com/happy-square/">Live</a>
+											<span>|</span>
+											<a target='_blank' href="https://github.com/swong194/happy-square">Code</a>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>My Story</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>In my studies as a biomedical engineer I have led projects to improve cardiovascular research. While I was engaged by the engineering concepts and impact of my work, it was a slow paced environment. I needed an environment that I felt was more exciting and challenged me on a daily basis. I still desired a career where I could be an active problem solver while still supporting my pillars of motivation in being creative, innovative and a community servant. I first dwelled in web development through freecodecamp and built my very first website just a week later. I then attended a software engineering program, learned multiple languages and frameworks, made my own projects, and here I am now. </p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
 
 			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
